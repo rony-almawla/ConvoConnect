@@ -34,7 +34,8 @@ button {
   cursor: pointer;
 }
 button,
-input {
+input,
+textarea {
   margin: 2px 4px;
   padding: 8px 12px;
   border-radius: var(--border-radius);
@@ -49,20 +50,25 @@ input {
   transition: color 0.05s ease-in, border-color 0.3s ease-out, background-color 0.3s ease-out, box-shadow 0.3s ease-out;
 }
 button:hover,
-input:hover {
+input:hover,
+textarea:hover {
   background-color: var(--color-background);
   border-color: var(--color-primary);
   box-shadow: var(--shadow-params-hover);
 }
 button:focus,
-input:focus {
+input:focus,
+textarea:focus {
   border-color: var(--color-primary);
 }
 
 button:active,
+input:active,
+textarea:active {
   box-shadow: var(--shadow-params-active);
 }
-input:active {
+input:active,
+textarea:active {
   background-color: var(--color-background);
   border-color: var(--color-text);
   color: var(--color-text);
