@@ -82,3 +82,27 @@ button:active {
   background-color: var(--color-primary);
   color: var(--color-surface);
 }
+button.colored,
+input.colored,
+textarea.colored {
+  background-color: var(--color-primary);
+  border-color: var(--color-primary);
+  color: var(--color-surface);
+}
+
+button.colored:hover,
+input.colored:hover,
+textarea.colored:hover {
+  background-color: var(--color-primary-dark);
+  border-color: var(--color-primary-dark);
+}
+input.colored:focus,
+textarea.colored:focus {
+  border-color: var(--color-primary);
+  background-color: var(--color-surface);
+  color: var(--color-primary);
+}
+button.colored:active {
+  background-color: var(--color-surface);
+  color: var(--color-primary);
+}
