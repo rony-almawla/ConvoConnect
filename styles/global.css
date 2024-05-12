@@ -1,5 +1,9 @@
 :root {
-  --color-primary: #6e00ff;
+  --color-primary-rgb: 110, 0, 255;
+  --color-primary: rgb(var(--color-primary-rgb));
+  --color-accent-rgb: 0, 204, 255;
+  --color-accent: rgb(var(--color-accent-rgb));
+  --color-primary-dark: #5015a0;
   --color-primary-admin: #157898;
   --color-background: #eff6fc;
   --color-surface: #fff;
