@@ -11,7 +11,7 @@
   --color-error: #b00020;
   --color-shadow: #0003;
 
-  --border-radius: 25px;
+  --border-radius: 16px;
 
   --shadow-params: 0 2px 2px var(--color-shadow);
   --shadow-params-hover: 0 4px 10px 5px var(--color-shadow);
