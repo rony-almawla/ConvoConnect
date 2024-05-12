@@ -108,6 +108,12 @@ textarea.colored:focus {
   background-color: var(--color-surface);
   color: var(--color-primary);
 }
+input.colored:active,
+textarea.colored:active {
+  background-color: var(--color-surface);
+  border-color: var(--color-text);
+  color: var(--color-text);
+}
 button.colored:active {
   background-color: var(--color-surface);
   color: var(--color-primary);
