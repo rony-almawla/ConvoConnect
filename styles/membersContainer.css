@@ -1,4 +1,4 @@
-#selectMembers {
+.membersContainer {
   max-height: 60vh;
   overflow: scroll;
   min-width: 400px;
@@ -6,7 +6,7 @@
   background-color: var(--color-background);
   border-radius: var(--border-radius);
 }
-#selectMembers .memberCard {
+.membersContainer .memberCard {
   display: flex;
   flex-direction: row;
   align-items: center;

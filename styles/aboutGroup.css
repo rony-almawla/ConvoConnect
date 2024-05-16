@@ -1,0 +1,12 @@
+#groupInfo {
+  flex: 1;
+  width: 100%;
+}
+#groupNameBox {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+#groupNameBox > label {
+  flex: 1;
+}

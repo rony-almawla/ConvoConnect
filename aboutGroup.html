@@ -2,6 +2,12 @@
 <html>
   <head>
     <title>Create Group</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+
     <link rel="stylesheet" href="./styles/global.css" />
     <link rel="stylesheet" href="./styles/sidebar.css" />
     <link rel="stylesheet" href="./styles/screen.css" />
@@ -14,19 +20,21 @@
       <div id="groupInfo">
         <img src="./assets/defaultProfile.webp" class="pfp" id="mypfp" />
         <div id="groupNameBox">
-          <input id="groupName" placeholder="Group name" />
-          <button onclick="createGroup()" class="colored">Create</button>
+          <label> <h3 class="title">Group name</h3> </label>
+          <button onclick="edit()">
+            <i class="fa-solid fa-pen-to-square"></i>
+          </button>
         </div>
       </div>
+
       <div id="membersList">
         <input
           id="searchMembers"
           class="colored"
           placeholder="Search members"
         />
-        <div id="membersContainer">
+        <div class="membersContainer">
           <div class="memberCard">
-            <input type="checkbox" id="__checkID__" />
             <img src="./assets/defaultProfile.webp" class="pfp" />
             <div class="name">Member name</div>
           </div>
@@ -35,7 +43,6 @@
         <script>
           const member = (checkID, i) => {
             return `<div class="memberCard">
-              <input type="checkbox" id="${checkID}" />
               <img src="./assets/defaultProfile.webp" class="pfp" />
               <div class="name">Member name ${i}</div>
             </div>`;
@@ -43,7 +50,7 @@
           const container =
             document.getElementsByClassName("membersContainer")[0];
           for (let i = 1; i <= 100; i++)
-            list.innerHTML += member(`memberCard${i}`, i);
+            container.innerHTML += member(`memberCard${i}`, i);
         </script>
       </div>
     </div>
